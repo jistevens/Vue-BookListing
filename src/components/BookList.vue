@@ -20,7 +20,7 @@ ul {
 
 
 <script>
-import './BookItem';
+import BookItem from './BookItem.vue';
 
 export default {
   name: 'BookList',
