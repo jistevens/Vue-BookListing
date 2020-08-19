@@ -1,8 +1,8 @@
 <template>
-<form class="" action="#" method="post">
+<form @submit.prevent="bookSubmit(bookTitle, bookAuthor)" class="" action="#" method="post">
   <input type="text" name="title" v-model="bookTitle" value="" placeholder="Book Title">
   <input type="text" name="author" v-model="bookAuthor" value="" placeholder="Book Author">
-  <button type="submit" name="button" @submit.prevent="bookSubmit(bookTitle, bookAuthor)">
+  <button type="submit" name="button">
     Add Book
   </button>
 </form>
